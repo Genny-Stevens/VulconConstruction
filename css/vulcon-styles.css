@@ -1,0 +1,367 @@
+/************************************************************COLOURS*/
+/*
+BEIGH - #eae5dd
+DARK GREY #454545
+*/
+/*************************************************************FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:ital,wght@0,100;1,500&family=Spartan:wght@100&display=swap');
+
+h1, h2, h3, h5, h6 {
+    font-family:'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3em;
+}
+/*************************************************************GLOBAL*/
+img {
+    width: 99%;
+}
+a {text-decoration: none;}
+
+h2 {
+    outline:1px solid
+}
+p {
+    padding: 10px;
+    font-size: 1em;
+}
+video {
+    width:100%;
+    height: auto;
+}
+hr {border: 0;
+    height: 1px;
+    background: #E1DDD7;
+    background-image: linear-gradient(to right, #E1DDD7, #676951, #E1DDD7);
+}
+iframe {
+    width:50%;
+    margin:0 auto;
+    padding:10px
+}
+/*************************************************************LAYOUT*/
+#container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+#inquire, #projects {margin-top: 90px;}
+
+/*****************************************NAV*/
+#mainNav {
+    background-color: rgba(234, 229, 221, 0.97);
+    margin: 5px 0;
+    text-align: right;
+    outline: 1px solid #454545;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 3;
+    
+}
+#mainNav ul li{
+    display: inline;
+}
+#mainNav a {
+    display: inline-block;
+    color: #000;
+    padding: 10px 30px;
+}
+#mainNav a:hover{
+    text-decoration: underline;
+    
+}
+/*SLICKNAV HAMBURGER MENU*/
+.slicknav_menu {
+	display:none;
+    background-color: rgba(234, 229, 221, 0.97)!important;
+    position: fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index: 3;
+}
+.slicknav_menu .slicknav_btn {
+    background-color: #454545;
+}
+.slicknav_nav {
+    background-color: rgba(234, 229, 221, 0.97);
+}
+
+/*****************************************HEADER*/
+#mainHeader {
+    background-image: url(../images/_header-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 30px;
+}
+/*****************************************QUOTE*/
+#quote {
+    padding:30px 40px 0 40px;
+}
+/****************************************SERVICES*/
+#services {
+    background-color: #454545;
+    color: #eae5dd;
+    padding: 30px;
+}
+#services h2 {
+    margin-top: 5px;
+    outline:none!important;
+    text-align: left;
+    font-size: 1.2em;
+}
+#services .left-col-services p{
+    font-size: 2.5em;
+    text-align: left;
+}
+#services-content {
+    padding: 30px 0 30px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow:row wrap;
+    
+}
+#services span {
+    font-size: 5em;
+    padding-bottom: 10px;
+}
+/**************************************PROJECTS*/
+#projects h6{
+    font-size: 1em;
+    color: #000;
+}
+#projects a:hover {
+    text-decoration: underline;
+    color: #000;
+} 
+/**************************************INQUIRE*/
+#inquire h2 {
+   margin-bottom: 5px
+}
+
+/**************************************FOOTER*/
+#mainFooter {
+    padding-top:10px;
+    padding-bottom: 20px;
+    background-color: #454545;
+    color: #eae5dd;
+    
+}
+#mainFooter div a {
+    color: #eae5dd;
+    text-decoration: underline;
+}
+#mainFooter div a:hover {
+     color:rgba(234, 229, 221, 0.45);
+}
+/*************************************************************REUSABLE CLASSES*/
+/*GLOBAL*/
+.fl {float: left;}
+.fr {float: right;}
+.clear {clear: both;}
+
+.current {
+    text-decoration: underline;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+.notCentered {
+    text-align: left;
+}
+/*SERVICES*/
+.item {
+    width:200px;
+    height:200px;
+    margin:2px
+    
+}
+.item p {
+    font-size: 0.4em;
+}
+.right-col-services {
+    flex-grow: 2;
+}
+.left-col-services {
+    flex-shrink: 3;
+}
+/*SOCIALS*/
+.socials {
+    font-size: 1.5em;
+}
+.socials a {
+    padding:0 20px;
+    color: #eae5dd;
+}
+.socials a:hover {
+    color:rgba(234, 229, 221, 0.45);
+}
+/*************************************************************COLUMNS*/
+.col12 {
+    margin: 1%;
+    padding: 1%;
+    width: 46%;
+}
+
+
+
+/*************************************************************MOBILE*/
+@media screen and (max-width: 450px) {
+	#menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+        width: 100%;
+        left:0;
+	}
+iframe {
+    width:94%;
+    margin:0 auto;
+    padding:10px
+}
+/***************************************LAYOUT*/
+#container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+#inquire, #projects {margin-top: 5px;}
+
+/*****************************************HEADER*/
+#mainHeader {
+    background-image: url(../images/_header-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 30px;
+}
+/*****************************************QUOTE*/
+#quote {
+    padding:30px 10px 0 10px;
+}
+/****************************************SERVICES*/
+#services {
+    background-color: #454545;
+    color: #eae5dd;
+    padding: 10px;
+}
+#services h2 {
+    margin-top: 5px;
+    outline:none!important;
+    text-align: left;
+    font-size: 1.2em;
+}
+#services .left-col-services p {
+    font-size: 1.8em;
+    text-align: left;
+}
+#services-content {
+    padding:10px;
+    padding-bottom: 40px;
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+    
+}
+#services span {
+    font-size: 5em;
+    padding-bottom: 10px;
+}
+/**************************************PROJECTS*/
+#projects h6{
+    font-size: 1em;
+    color: #000;
+}
+#projects a:hover {
+    text-decoration: underline;
+    color: #000;
+} 
+/**************************************INQUIRE*/
+#inquire h2 {
+   margin-bottom: 5px
+}
+
+/**************************************FOOTER*/
+#mainFooter {
+/*    padding-top:130px;*/
+    padding-bottom: 20px;
+    background-color: #454545;
+    color: #eae5dd;
+    
+}
+#mainFooter div a {
+    color: #eae5dd;
+    text-decoration: underline;
+}
+#mainFooter div a:hover {
+     color:rgba(234, 229, 221, 0.45);
+}
+/*************************************************************REUSABLE CLASSES*/
+/*GLOBAL*/
+.fl {float: left;}
+.fr {float: right;}
+.clear {clear: both;}
+
+.current {
+    text-decoration: underline;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+.notCentered {
+    text-align: left;
+}
+/*SERVICES*/
+.item {
+    width:250px;
+    height:200px;
+    margin:2px;
+    padding-top: 8px
+    
+}
+.item p {
+    font-size: 0.8em;
+}
+.right-col-services {
+    flex-grow: 2;
+}
+.left-col-services {
+    flex-shrink: 3;
+}
+/*SOCIALS*/
+.socials {
+    font-size: 1.5em;
+}
+.socials a {
+    padding:0 20px;
+    color: #eae5dd;
+}
+.socials a:hover {
+    color:rgba(234, 229, 221, 0.45);
+}
+/*************************************************************COLUMNS*/
+.col12 {
+    margin: 1%;
+    padding: 1%;
+    width: 100%;
+}
+}/*END OF MOBILE*/
